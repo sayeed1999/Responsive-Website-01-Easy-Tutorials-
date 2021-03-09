@@ -1,0 +1,522 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+#header {
+    height: 100vh;
+    width: 100%;
+    background-image: url(images/background.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    margin: 0 100px;
+    max-width: 350px;
+}
+
+.logo {
+    width: 100px;
+    margin-top: 30px;
+}
+
+#header-text {
+    margin-top: 8vh;
+}
+
+#header-text h1 {
+    font-size: 34px;
+}
+
+.square {
+    width: 12px;
+    height: 12px;
+    background-color: crimson;
+    display: inline-block;
+    margin: 15px 0;
+}
+
+.common-btn {
+    padding: 18px 40px;
+    font-weight: bold;
+    background: transparent;
+    outline: none;
+    border: 2px solid crimson;
+    border-radius: 35px;
+    cursor: pointer;
+}
+
+.common-btn:hover {
+    background: rgb(224, 60, 93);
+    color: white;
+    border-color: black;
+}
+
+#header-text button {
+    margin: 18px 0 34px 0;
+}
+
+#header-text p {
+    font-size:15px;
+    color: rgb(199, 140, 13);
+    line-height: 18px;
+}
+
+.line {
+    line-height: 8px;
+}
+
+#line-1 {
+    width: 15px;
+    height: 15px;
+    background-color: crimson;
+    display: inline-block;
+}
+
+#line-2 {
+    width: 80px;
+    height: 1px;
+    background-color: crimson;
+    display: inline-block;
+}
+
+#line-3 {
+    width: 60px;
+    height: 1px;
+    background-color: crimson;
+    display: inline-block;
+}
+
+#sideNav {
+    width: 250px;
+    height: 100vh;
+    background-color: crimson;
+    position: fixed;
+    top: 0;
+    right: -250px; /*bring it to 0 when it opens*/
+    z-index: 2;
+    transition: 1.6s; /*this one line makes the animation o sliding the thing!f*/
+}
+
+nav ul li {
+    list-style-type: none;
+    margin-top: 30px;
+    margin-left: 20px;
+    padding: 10px 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background-color: darkslateblue;
+    width: 160px;
+    font-weight: bold;
+}
+
+#menu-btn {
+    position: fixed;
+    z-index: 3;
+    /* position fixed should come up with top-right-bottom-left */
+    top: 35px;
+    right: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+
+
+#about, #offer {
+    padding: 30px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#about-left-col {
+    flex-basis: 50%;
+}
+
+#about-right-col {
+    flex-basis: 50%;
+    /* background-color: #efefef; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#about-left-col img {
+    width: 100%;
+}
+
+#about-text {
+    margin-right: 100px;
+    text-align: right;
+    max-width: 500px;
+}
+
+#about-text .line {
+    margin: 24px 0 12px 0;
+}
+
+#about-text h2 {
+    font-size: 24px;
+    font-style: italic;
+}
+
+#about-text h3 {
+    font-size: 18px;
+    font-style: italic;
+    color: #797979;
+}
+
+
+#features-row {
+    padding: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%; /*this will first take 80% width from the left side of the screen*/
+    margin: auto; /*this will then take 10% margin equally on both sides!*/
+    justify-content: space-around;
+}
+
+.features-col {
+    flex-basis: 25%;
+    text-align: center;
+}
+
+.features-col img {
+    width: 100%;
+}
+
+.features-col h4 {
+    margin-bottom: 18px;
+    /* font-size: 16px;
+    font-weight: 600; these two are provided by default here!! */
+}
+
+#features-btn-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#features-btn-section .line {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin-right: 18px;
+}
+
+
+#course-row {
+    padding: 100px 0;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+#course-left-col {
+    flex-basis: 50%;
+}
+
+#course-right-col {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#course-left-col #course-img {
+    margin-right: 100px;
+}
+
+#course-left-col #course-img img {
+    width: 100%;
+}
+
+#course-text {
+    margin-left: 100px;
+}
+
+#course-text .common-btn {
+    margin: 20px 0;
+}
+
+#offer .common-btn {
+    margin: 20px 0;
+}
+
+#contact-row {
+    margin: 0 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#contact-left-col, #contact-right-col {
+    flex-basis: 50%;
+}
+
+#contact-right-col img {
+    width: 100%;
+}
+
+
+form {
+    margin: 30px 0;
+    max-width: 350px;
+}
+
+form input {
+    width: 100%;
+    border: solid 2px pink;
+    outline: none;
+    box-shadow: none;
+    box-sizing: border-box; /*when you use border-box, its width won't increase after adding padding or whatever!*/
+    padding: 12px 10px;
+    margin-bottom: 5px;
+}
+
+.btn-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-box .common-btn {
+    flex-basis: 48%;
+    padding: 18px 0;
+    border-radius: 0px; /*only for this section*/
+    margin: 5px 0 16px 0;
+}
+
+
+#footer {
+    margin: 0 100px;
+    padding: 50px 0 30px 0;
+}
+
+hr {
+    width: 100%;
+    height: 2px;
+    background-color: pink;
+    border: none;
+}
+
+#footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer-left-col {
+    flex-basis: 50%;
+}
+
+#footer-right-col {
+    flex-basis: 35%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#footer-link {
+    margin: 50px 0 0 0;
+}
+
+#footer-links h4 {
+    margin-bottom: 20px;
+    color: goldenrod;
+}
+
+#footer-links small {
+    display: block;
+}
+
+#footer-right-col {
+    justify-content: space-around;
+    line-height: 2;
+}
+
+#footer-right-col div {
+    display: flex;
+    flex-direction: column;
+}
+
+#footer-right-col #copyright {
+    justify-content: flex-end;
+}
+
+#footer-right-col img {
+    display: inline-block;
+    width: 100px;
+    margin-bottom: 18px;
+}
+
+#footer .common-btn {
+    border-radius: 0%;
+}
+
+
+#social-icons {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 50%;
+    width: 50px; /*shortcut: reduce the width of container so that more than one can't fit which becomes flex towards column*/
+    transform: translateY(-50%);
+}
+
+#social-icons img {
+    display: block;
+    width: 20px;
+    margin: 0 auto 20px; /*0 from top, auto from left&right, 20px from bottom*/
+    cursor: pointer;
+    transition: 2s ease;
+}
+
+#social-icons img:hover {
+    transform: translateX(20px);
+}
+
+
+
+
+
+
+@media screen and (max-width: 770px) {
+    #header {
+        background: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #header .container {
+        margin: 0 50px;
+        max-width: 100%;
+    }
+    
+    .logo {
+        width: 70px;
+        margin-top: 30px;
+        position: absolute;
+        top: 0;
+    }
+        
+    #header-text h1 {
+        font-size: 25px;
+    }
+
+    #header-text p {
+        font-size:12px;
+    }
+    #menu-btn {
+        right: 30px;
+    }
+    #social-icons img {
+        width: 14px;
+        margin: 0 auto 15px;
+    }
+
+
+    #about-left-col, #about-right-col {
+        flex-basis: 100%;
+    }
+    
+    #about-left-col img {
+        width: 100%;
+    }
+    
+    #about-text {
+        margin: 0 50px;
+        text-align: right;
+    }
+
+    #about h2 {
+        font-size: 18px;
+    }
+
+    #about h3 {
+        font-size: 12px;
+    }
+
+
+    .features-col {
+        flex-basis: 80%;
+    }
+
+    #features-btn-section .common-btn {
+        margin-top: 14px;
+    }
+
+
+    #course-row {
+        flex-direction: column;
+        justify-content: c;
+    }
+    
+    #course-left-col {
+        flex-basis: 100%;
+    }
+    
+    #course-right-col {
+        flex-basis: 100%;
+    }
+    
+    #course-left-col #course-img {
+        margin-left: 50px;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+        
+    #course-text {
+        margin-left: 50px;
+    }
+    
+
+    #contact-row {
+        margin: 0 50px;
+    }
+
+    #contact-left-col, #contact-right-col {
+        flex-basis: 100%;
+    }
+
+
+    #footer {
+        margin: 0 50px;
+    }
+
+    #footer-left-col, #footer-right-col {
+        flex-basis: 100%;
+    }
+    
+    #footer-left-col {
+        padding-top: 50px;
+    }
+
+    #footer-link {
+        flex-basis: 50%;
+        padding-bottom: 50px;
+    }
+
+    #footer-right-col div {
+        flex-basis: 30%;
+    }
+
+    #footer-right-col img {
+        width: 70px;
+    }
+
+}

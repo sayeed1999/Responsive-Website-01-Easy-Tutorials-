@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Design using HTML and CSS</title>
+    <link rel="stylesheet" href="index.css"/>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+</head>
+<body>
+    <section id="header">
+        <div class="container">
+            <img class="logo" src="images/logo.png" alt="logo-of-store"/>
+            <div id="header-text">
+                <h1>Our purpose is to distribute knowledge, and to remove poverty..</h1>
+                <span class="square"></span>
+                <p>Lorem ipsum dolor sit amet, consferendis dignissimos facilis necessitatibus excepturi reiciendis, at sapiente exercitationem autem, quidem corporis quibusdam pariatur aperiam!</p>
+                <button class="common-btn">Explore</button>
+            </div>
+            <div class="line">
+                <div id="line-1"></div> <br/>
+                <div id="line-2"></div> <br/>
+                <div id="line-3"></div>
+            </div>
+        </div>
+    </section>
+    <nav id="sideNav">
+        <ul>
+            <li><a href="#header">HOME</a></li>
+            <li><a href="#about">ABOUT US</a></li>
+            <li><a href="#features">FEATURES</a></li>
+            <li><a href="#courses">COURSES</a></li>
+            <li><a href="#offer">OFFER</li></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+    <img id="menu-btn" onclick="menuBtnClick()" src="images/menu.png" alt="menu-option-click" />
+
+    <!-- about us section -->
+    <section id="about">
+        <div id="about-left-col">
+            <img src="images/about.png" alt="about-image" />
+        </div>
+        <div id="about-right-col">
+            <div id="about-text">
+                <h1>About Us</h1>
+                <span class="square"></span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quae veritatis reprehenderit, eligendi error illo cum inventore? Dolores quibusdam quia magni dicta eius dolor fugiat voluptatem, tempora ipsa dignissimos officiis a, inventore reprehenderit, eaque similique! Debitis ratione ea voluptas quas.</p>
+                <div class="line">
+                    <div id="line-1"></div> <br/>
+                    <div id="line-2"></div> <br/>
+                    <div id="line-3"></div>
+                </div>
+                <h2>"Learning is not attained by chance, it must be sought for with ardor and attended to with diligence"</h2>
+                <h3>----Abigail Adams</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- features section -->
+    <section id="features">
+        <div id="features-row">
+            <div class="features-col">
+                <img src="images/pic-1.png" alt="our features" />
+                <h4>Learn From Anywhere</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, ipsa!</p>
+            </div>
+            <div class="features-col">
+                <img src="images/pic-2.png" alt="our features" />
+                <h4>Expert Teachers</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, ipsa!</p>
+            </div>
+            <div class="features-col">
+                <img src="images/pic-3.png" alt="our features" />
+                <h4>Lifetime access</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, ipsa!</p>
+            </div>
+        </div>
+        <div id="features-btn-section">
+            <div class="line">
+                <div id="line-1"></div> <br/>
+                <div id="line-2"></div> <br/>
+                <div id="line-3"></div>
+            </div>
+            <button class="common-btn">Start Free Trial</button>
+        </div>
+    </section>
+
+    <!-- courses -->
+    <section id="courses">
+        <div id="course-row">
+            <div id="course-left-col">
+                <div id="course-img">
+                    <img src="images/course.png" alt="browse our courses" />
+                </div>
+            </div>
+            <div id="course-right-col">
+                <div id="course-text">
+                    <h1>Browse Our Top <br/>Courses</h1>
+                    <span class="square"></span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, quod aut. Sapiente ratione inventore id.</p>
+                    <button class="common-btn">View All Courses</button>
+                    <div class="line">
+                        <div id="line-1"></div> <br/>
+                        <div id="line-2"></div> <br/>
+                        <div id="line-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- offer section -->
+    <section id="offer">
+        <div id="about-left-col">
+            <img src="images/offer.png" alt="about-image" />
+        </div>
+        <div id="about-right-col">
+            <div id="about-text">
+                <h1>Limitless learning, <br/>Limitless opportunities</h1>
+                <span class="square"></span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quae veritatis reprehenderit, eligendi error illo cum inventore? Dolores quibusdam quia magni dicta eius dolor fugiat voluptatem, tempora ipsa dignissimos officiis a, inventore reprehenderit, eaque similique! Debitis ratione ea voluptas quas.</p>
+                <button class="common-btn">Start Free Trial</button>
+                <div class="line">
+                    <div id="line-1"></div> <br/>
+                    <div id="line-2"></div> <br/>
+                    <div id="line-3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section -->
+    <section id="contact">
+        <div id="contact-row">
+            <div id="contact-left-col">
+                <h1>Sign Up To Join <br/>Our Learning Community</h1>
+                <form>
+                    <input type="text" placeholder="Enter Name" />
+                    <input type="email" placeholder="Enter Email" />
+                    <input type="password" placeholder="Enter Password" />
+                    <div class="btn-box">
+                        <button class="common-btn">Sign Up</button>
+                        <button class="common-btn">Start Free Trial</button>
+                    </div>
+                    <div class="line">
+                        <div id="line-1"></div> <br/>
+                        <div id="line-2"></div> <br/>
+                        <div id="line-3"></div>
+                    </div>
+                </form>
+            </div>
+            <div id="contact-right-col">
+                <img src="images/contact.png" alt="our contact" />
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section -->
+    <section id="footer">
+        <hr/>
+        <div id="footer-row">
+            <div id="footer-left-col">
+                <div id="footer-links">
+                    <div id="footer-link">
+                        <h4>Product</h4>
+                        <small>Our Plan</small>
+                        <small>Free Tier</small>
+                    </div>
+                    <div id="footer-link">
+                        <h4>About Us</h4>
+                        <small>Request Demo</small>
+                        <small>FAQs</small>
+                    </div>
+                    <div id="footer-link">
+                        <h4>Support</h4>
+                        <small>Features</small>
+                        <small>Contact Us</small>
+                    </div>
+                    <div id="footer-link">
+                        <h4>Explore</h4>
+                        <small>Find a non-profit</small>
+                        <small>Corporate Solution</small>
+                    </div>
+                </div>
+            </div>
+            <div id="footer-right-col">
+                <div id="copyright">
+                    <small>copyright@Xypo.com</small>
+                    <small>copyright 2020 Xypo</small>
+                </div>
+                <div>
+                    <img src="images/logo.png" alt="our logo" />
+                    <button class="common-btn">English</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- social icons -->
+    <div id="social-icons">
+        <img src="images/facebook.png" target="_blank" />
+        <img src="images/instagram.png" target="_blank" />
+        <img src="images/twitter.png" target="_blank" />
+        <img src="images/linkedin.png" target="_blank" />
+    </div>
+</body>
+<script>
+    var menuBtn = document.getElementById("menu-btn")
+    var sideNav = document.getElementById("sideNav")
+
+    const menuBtnClick = () => {
+        if(sideNav.style.right === "-250px") sideNav.style.right = "0px"
+        else sideNav.style.right =  "-250px"
+    }
+
+    var scroll = new SmoothScroll('a[href*="#"]');
+
+</script>
+</html>
